@@ -3,13 +3,52 @@
     "link"
   ],
   "blog": [
-    "link",
-    "snippet"
+    "blogSnippet"
+  ],
+  "blogSnippet":[
+    "image",
+    "link"
+  ],
+  "container":[
+    "slider",
+    "video",
+    "text",
+    "externalBlock",
+    "splitBlock",
+    "image",
+    "cardList",
+    "banner",
+    "blogList",
+    "blog",
+    "ugc",
+    "promoList"
   ],
   "image": [
     "roundel"
   ],
-  "promoBanner": [
-    "promobannersection"
+  "product": [
+    "table",
+    "chair",
+    "finishes",
+    "fabrics",
+    "depths",
+    "details",
+    "base",
+    "finish",
+    "fabric",
+    "material",
+    "material_list"
+  ],
+  "promo": [
+    "link"
+  ],
+  "campaign-brief":[
+    "edition-brief-type-library",
+    "content-brief-type-library",
+    "image-content-type-library",
+    "links-content-type-library"
+  ],
+  "promobanner":[
+      "promobannersection"
   ]
 }

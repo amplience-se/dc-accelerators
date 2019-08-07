@@ -1,40 +1,29 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/blog.json",
-  "title": "Blog Accelerator",
-  "description": "Blog Accelerator",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/blog.json",
+  "title": "Blog",
+  "description": "A Blog Post",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
   ],
-  "propertyOrder": [
-    "snippet",
-    "title",
-    "keywords",
-    "content"
-  ],
   "type": "object",
   "properties": {
     "snippet": {
       "type": "object",
-      "title": "Snippet",
-      "description": "",
+      "title": "Blog Snippet",
+      "description": "Blog Snippet",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/snippet.json"
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/blogSnippet.json"
         }
       ]
     },
-    "title": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 255,
-      "title": "Title",
-      "description": ""
-    },
-    "content": {
+    "contentTypes": {
       "type": "array",
+      "title": "Content Type",
+      "description": "Select and order content to display in the page",
       "items": {
         "allOf": [
           {
@@ -43,24 +32,24 @@
           {
             "properties": {
               "contentType": {
-                "title": "Content",
+                "title": "",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/banner.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/video.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/text.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/cardlist.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/blog.json"
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/slider.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/text.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/externalBlock.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/splitBlock.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/image.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/cardList.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/ugc.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/promoList.json"
                 ]
               }
             }
           }
         ]
-      },
-      "minItems": 0,
-      "maxItems": 20,
-      "title": "Content",
-      "description": ""
+      }
     }
   }
 }

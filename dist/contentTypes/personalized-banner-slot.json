@@ -1,0 +1,57 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/personalized-banner-slot.json",
+  "title": "Personalized Slot",
+  "description": "Personalized Hero Banner Slot for different segments",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "segment",
+    "content"
+  ],
+  "type": "object",
+  "properties": {
+    "segments": {
+      "type": "array",
+      "title": "Content",
+
+      "items": {
+        "type": "object",
+        "properties": {
+          "segment": {
+            "type": "string",
+            "title": "Segment",
+            "enum": [
+              "RH-member",
+              "bargain-hunter",
+              "fashionista",
+              "home-trendsetter",
+              "globe-trotter"
+            ]
+          },
+          "content": {
+            "title": "Content",
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "contentType",
+                    "enum": [
+                      "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

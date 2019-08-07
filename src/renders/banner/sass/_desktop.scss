@@ -12,7 +12,7 @@
   }
 
   .amp-dc-banner-info {
-    font-size: 22px;
+    //font-size: 22px;
     text-align: center;
     background: #fff;
     color: #000;
@@ -42,12 +42,25 @@
     white-space: normal;
 
     &[data-align='left'] {
-      left: 65px;
+      left: 10%;
+    }
+    &[data-align='right'] {
+      left: 60%;
+    }
+    &[data-align='center'] {
+      left: 35%;
+    }
+    &[data-align='top'] {
+      top: -40%;
+    }
+    &[data-align='middle'] {
+      top:0;
+    }
+    &[data-align='bottom'] {
+      top: 35%;
     }
 
-    &[data-align='right'] {
-      right: 65px;
-    }
+
 
     &:before {
       content: '';
@@ -64,12 +77,39 @@
   }
 
   .amp-dc-banner-header {
-    font-size: 32px;
+    //text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 1em;
+    margin-bottom: .5rem;
+    letter-spacing: normal;
+    //letter-spacing: 0.4vw;
+    //max-width: max-content;
+    //padding: 15px;
+    ////margin-top : -30px;
+    //position: absolute;
+    //left: 50%;
+    ////transform: translate(-50%, -50%);
   }
 
-  .amp-dc-banner-description, .amp-dc-banner-subheader {
-    font-size: 16px;
-    margin-top: 15px;
+ .amp-dc-banner-subheader {
+   font-family: trade-gothic-next, sans-serif;
+   font-weight: 700;
+   //font-style: bold;
+   letter-spacing: 2px;
+   font-size: 1.75vw;
+   line-height: 1.3em;
+   margin-bottom: 1em;
+   //max-width: max-content;
+  }
+  .amp-dc-banner-description{
+    //text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    //text-transform: uppercase;
+    font-size: 17px;
+    //line-height: 13px;
   }
 
   .amp-dc-banner-button {

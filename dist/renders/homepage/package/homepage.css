@@ -9,7 +9,17 @@
 }
 
 .amp-dc-homepage .amp-dc-text {
-  margin: 0 25px;
+  font-style: normal;
+  -webkit-font-variant-ligatures: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 19px;
+  line-height: 26px;
+  font-family: trade-gothic-next, sans-serif;
 }
 
 .amp-dc-homepage .amp-dc-splitBlock {
@@ -34,8 +44,6 @@
 
 .header-wrap .header-content {
   margin: 10px 50px;
-  overflow: hidden;
-  height: 40px;
 }
 
 .header-wrap .logo {
@@ -58,7 +66,7 @@
 .header-wrap .top-menu > li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 37px;
+  margin-right: 23px;
 }
 
 .header-wrap .top-menu > li:last-child {

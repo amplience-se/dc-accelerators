@@ -1,6 +1,6 @@
 {
   "banner": [
-    "image"
+    "link"
   ],
   "blog": [
     "text",
@@ -9,28 +9,12 @@
     "slider",
     "banner",
     "card",
-    "cardList"
-  ],
-  "externalBlock": [],
-  "homepage": [
-    "slider",
-    "banner",
-    "promoBanner",
-    "video",
-    "text",
-    "externalBlock",
-    "splitBlock",
-    "card",
     "cardList",
-    "image"
+    "ugc"
   ],
-  "image": [],
-  "localizedimage":[],
-  "localizedlink":[],
-  "localizedbanner": [
-    "localizedimage",
-    "localizedlink"
-  ],
+  "blogList":[],
+  "blogSnippet":[],
+  "container": [],
   "card": [
     "image"
   ],
@@ -38,7 +22,15 @@
     "image",
     "card"
   ],
-  "promoBanner": [],
+  "externalBlock": [],
+  "image": [],
+  "link":[],
+  "metadata":[],
+  "personalized-banner-slot": [],
+  "personalized-slot": [],
+  "product":[],
+  "promobanner":[],
+  "shoppableVideo": [],
   "slider": [
     "banner",
     "image",
@@ -50,5 +42,11 @@
     "text"
   ],
   "text": [],
-  "video": []
+  "ugc":[],
+  "video": [],
+  "campaign-brief":[],
+  "sfcc-dc-slot": [],
+  "banner-slot": [],
+  "emailbannersvg": [],
+  "sfmc-dc-slot": []
 }

@@ -1,21 +1,20 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/splitblock.json",
-  "title": "Split Block Accelerators",
-  "description": "Split Block Accelerator",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/splitBlock.json",
+
+  "title": "Split Block",
+  "description": "A reusable content type which allows 2 content types to be used together to create a split block",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
   ],
-  "propertyOrder": [
-    "content",
-    "split"
-  ],
   "type": "object",
   "properties": {
     "content": {
       "type": "array",
+      "title": "Content",
+      "description": "Content to be used in the split block (left and right)",
       "items": {
         "allOf": [
           {
@@ -24,11 +23,12 @@
           {
             "properties": {
               "contentType": {
-                "title": "content",
+                "title": "",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/video.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/text.json"
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/image.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/text.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json"
                 ]
               }
             }
@@ -36,19 +36,21 @@
         ]
       },
       "minItems": 2,
-      "maxItems": 2,
-      "title": "Content",
-      "description": ""
+      "maxItems": 2
     },
     "split": {
       "type": "string",
+      "title": "Split Ratio",
+      "description": "The percentage of display used for the left and right content (left/right)",
       "enum": [
         "50/50",
         "70/30",
         "30/70"
-      ],
-      "title": "Split Ratio",
-      "description": ""
+      ]
     }
-  }
+  },
+  "propertyOrder": [
+    "content",
+    "split"
+  ]
 }

@@ -1,12 +1,16 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/roundel.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/roundel.json",
   "title": "Roundel",
-  "description": "Roundel Accelerator",
+  "description": "An additional layer which can be added to an image composite",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
   "propertyOrder": [
     "roundel",
     "roundelRatio",
-    "opacity",
     "roundelPosition"
   ],
   "type": "object",
@@ -17,18 +21,13 @@
     "roundelRatio": {
       "type": "number",
       "title": "Roundel Ratio",
-      "description": "A value between 0 and 3 e.g. 2",
+      "description": "A value between 0 and 10 e.g. 0.6",
       "minimum": 0,
-      "maximum": 3
-    },
-    "opacity": {
-      "type": "number",
-      "title": "Roundel Opacity",
-      "description": "A value between 0 and 100 e.g. 50",
-      "minimum": 0,
-      "maximum": 100
+      "maximum": 10
     },
     "roundelPosition": {
+      "title": "Roundel Position",
+      "description": "Roundel Position",
       "type": "string",
       "enum": [
         "Top Left",
@@ -36,9 +35,7 @@
         "Bottom Left",
         "Bottom Right",
         "Middle Center"
-      ],
-      "title": "Roundel Position",
-      "description": "Roundel Position"
+      ]
     }
   }
 }
