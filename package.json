@@ -15,7 +15,7 @@
     "dc-accelerators-content-types": "elmikegonzalez/dc-accelerators-content-types#baja/demo",
     "gulp-logger": "0.0.2",
     "gulp-s3-upload": "^1.7.0",
-    "handlebars": "4.0.5",
+    "handlebars": "4.1.2",
     "handlebars-helpers": "^0.10.0",
     "lory.js": "2.2.1",
     "showdown": "1.7.1"
